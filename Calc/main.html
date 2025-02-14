@@ -1,0 +1,37 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="calc">
+        <div id="output">
+            <label for="res" class="visually-hidden">Result</label>
+            <input type="text" id="res" placeholder="0" readonly>
+        </div>
+        <div class="btn">
+            <input type="button" value="C" onclick="Clear()" id="clear" aria-label="Clear">
+            <input type="button" value="←" onclick="Back()" id="backspace" aria-label="Backspace">
+            <input type="button" value="%" onclick="Solve('%')" aria-label="Percentage">
+            <input type="button" value="/" onclick="Solve('/')" aria-label="Divide">
+            <input type="button" value="7" onclick="Solve('7')" aria-label="Seven">
+            <input type="button" value="8" onclick="Solve('8')" aria-label="Eight">
+            <input type="button" value="9" onclick="Solve('9')" aria-label="Nine">
+            <input type="button" value="×" onclick="Solve('*')" aria-label="Multiply">
+            <input type="button" value="4" onclick="Solve('4')" aria-label="Four">
+            <input type="button" value="5" onclick="Solve('5')" aria-label="Five">
+            <input type="button" value="6" onclick="Solve('6')" aria-label="Six">
+            <input type="button" value="-" onclick="Solve('-')" aria-label="Subtract">
+            <input type="button" value="1" onclick="Solve('1')" aria-label="One">
+            <input type="button" value="2" onclick="Solve('2')" aria-label="Two">
+            <input type="button" value="3" onclick="Solve('3')" aria-label="Three">
+            <input type="button" value="+" onclick="Solve('+')" aria-label="Add">
+            <input type="button" value="00"onclick="Solve('00')" aria-label="Double Zero">
+            <input type="button" value="0" onclick="Solve('0')" aria-label="Zero">
+            <input type="button" value="." onclick="Solve('.')" aria-label="Decimal">
+            <input type="button" value="=" onclick="Result()" id="equals" aria-label="Equals">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>

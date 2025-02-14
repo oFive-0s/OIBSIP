@@ -1,0 +1,117 @@
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
+        }
+̥
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #121212;
+            color: #e0e0e0;
+        }
+
+        #calc {
+            width: 320px;
+            background: #1c1c1c;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        #output {
+            padding: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: right;
+            background: #222222;
+            color: #ffffff;
+            border-bottom: 2px solid #000000;
+            min-height: 90px;
+        }
+
+        #output input {
+            width: 100%;
+            border: none;
+            background: transparent;
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: bold;
+            text-align: right;
+            outline: none;
+            cursor: default;
+        }
+
+        .btn {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 8px;
+            padding: 16px;
+            background: #2a2a2a;
+        }
+
+        .btn input {
+            height: 60px;
+            font-size: 20px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            background: #3a3a3a;
+            color: #ffffff;
+            cursor: pointer;
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .btn input:hover {
+            background: #555555;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        #clear, #backspace {
+            background: #e74c3c;
+            color: white;
+        }
+
+        #clear:hover, #backspace:hover {
+            background: #c0392b;
+        }
+
+        #equals {
+            background: #27ae60;
+            color: white;
+            grid-column: span 1;
+        }
+
+        #equals:hover {
+            background: #229954;
+        }
+
+        @media (max-width: 360px) {
+            #calc {
+                width: 90%;
+            }
+
+            #output {
+                font-size: 28px;
+                min-height: 80px;
+            }
+
+            .btn input {
+                height: 50px;
+                font-size: 18px;
+            }
+        }
